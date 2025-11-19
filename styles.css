@@ -748,6 +748,13 @@ section:nth-child(odd) {
     margin-bottom: 3rem;
 }
 
+@media (max-width: 768px) {
+    .why-choose-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
 .why-item {
     text-align: center;
     padding: 1.5rem;
@@ -806,6 +813,31 @@ section:nth-child(odd) {
 .trust-ribbon.full-width {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
+}
+
+@media (max-width: 768px) {
+    .trust-ribbon.full-width {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .trust-ribbon {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    
+    .trust-ribbon::before {
+        display: none;
+    }
+    
+    .ribbon-item {
+        flex: 1 1 45%;
+        background: linear-gradient(135deg, var(--black) 0%, #1a1a1a 100%);
+        border-radius: 12px;
+        box-shadow: var(--ios-shadow-medium);
+        border: 1px solid var(--gold);
+    }
 }
 
 .trust-ribbon::before {
@@ -1201,6 +1233,13 @@ section:nth-child(odd) {
     align-items: start;
 }
 
+@media (max-width: 768px) {
+    .awards-doctors-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
 .awards-section h3,
 .doctors-section h3 {
     color: var(--charcoal);
@@ -1216,6 +1255,12 @@ section:nth-child(odd) {
     gap: 1.5rem;
 }
 
+@media (max-width: 768px) {
+    .awards-grid {
+        gap: 1rem;
+    }
+}
+
 .award-item {
     display: flex;
     align-items: center;
@@ -1226,6 +1271,15 @@ section:nth-child(odd) {
     box-shadow: var(--ios-shadow-light);
     transition: var(--ios-transition);
     border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+@media (max-width: 768px) {
+    .award-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
 }
 
 .award-item:hover {
@@ -1265,6 +1319,12 @@ section:nth-child(odd) {
     gap: 2rem;
 }
 
+@media (max-width: 768px) {
+    .doctors-grid {
+        gap: 1.5rem;
+    }
+}
+
 .doctor-card {
     display: flex;
     gap: 1.5rem;
@@ -1274,6 +1334,21 @@ section:nth-child(odd) {
     box-shadow: var(--ios-shadow-light);
     transition: var(--ios-transition);
     border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+@media (max-width: 768px) {
+    .doctor-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .doctor-image {
+        align-self: center;
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .doctor-card:hover {
@@ -1345,6 +1420,13 @@ section:nth-child(odd) {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: start;
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }
 
 .contact-info h2 {
@@ -2454,5 +2536,27 @@ section:nth-child(odd) {
     
     .header .container {
         padding: 20px 20px;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 5% auto;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .modal-body {
+        padding: 15px;
+    }
+    
+    .modal-header {
+        padding: 12px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .modal-footer {
+        padding: 12px 15px;
     }
 }
