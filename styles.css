@@ -198,6 +198,28 @@ h3 {
     padding: 10px 20px;
 }
 
+@media (max-width: 768px) {
+    .header .container {
+        padding: 8px 15px;
+    }
+    
+    .logo {
+        height: 60px;
+    }
+    
+    .nav-brand {
+        padding: 8px 12px;
+    }
+    
+    .brand-text h3 {
+        font-size: 1rem;
+    }
+    
+    .brand-text span {
+        font-size: 0.7rem;
+    }
+}
+
 .nav-brand {
     background: rgba(255, 255, 255, 0.9);
     padding: 12px 20px;
@@ -343,6 +365,18 @@ h3 {
     justify-content: center;
     background: linear-gradient(135deg, var(--white) 0%, var(--cream) 100%);
     padding: 100px 5px 80px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 120px 5px 60px;
+        min-height: auto;
+    }
+    
+    .hero-slideshow {
+        height: 250px;
+        margin-top: 20px;
+    }
 }
 
 .hero-layout {
@@ -825,6 +859,7 @@ section:nth-child(odd) {
         flex-wrap: wrap;
         gap: 1rem;
         padding: 1rem;
+        background: none;
     }
     
     .trust-ribbon::before {
@@ -833,10 +868,10 @@ section:nth-child(odd) {
     
     .ribbon-item {
         flex: 1 1 45%;
-        background: linear-gradient(135deg, var(--black) 0%, #1a1a1a 100%);
         border-radius: 12px;
         box-shadow: var(--ios-shadow-medium);
         border: 1px solid var(--gold);
+        background: linear-gradient(135deg, var(--black) 0%, #1a1a1a 100%) !important;
     }
 }
 
