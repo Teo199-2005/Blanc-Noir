@@ -28,13 +28,9 @@
 }
 
 .loading-logo img {
-    height: 180px;
+    height: 120px;
     width: auto;
     animation: pulse 2s infinite;
-    border-radius: 50%;
-    border: 3px solid var(--gold);
-    background: var(--white);
-    padding: 15px;
 }
 
 .loading-text h2 {
@@ -54,7 +50,19 @@
     font-weight: 600;
 }
 
+.loading-spinner {
+    margin-top: 3rem;
+}
 
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(212, 175, 55, 0.3);
+    border-top: 3px solid var(--gold);
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: spin 1s linear infinite;
+}
 
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
@@ -436,18 +444,12 @@ h3 {
 }
 
 .hero-content h1 {
+    color: var(--charcoal);
     margin-bottom: 1.5rem;
-    background: linear-gradient(90deg, var(--black), var(--charcoal), var(--gold), var(--light-gold));
-    background-size: 200% 100%;
+    background: linear-gradient(135deg, var(--charcoal) 0%, var(--gold) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: gradientShift 6s linear infinite;
-}
-
-@keyframes gradientShift {
-    0% { background-position: 0% 0%; }
-    100% { background-position: 200% 0%; }
 }
 
 .hero-content p {
