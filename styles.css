@@ -802,15 +802,16 @@ section:nth-child(odd) {
 .why-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, var(--gold) 0%, var(--light-gold) 100%);
+    background: var(--white);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--white);
+    color: var(--black);
     margin: 0 auto 1rem;
     box-shadow: var(--ios-shadow-medium);
     transition: var(--ios-transition);
+    border: 2px solid var(--black);
 }
 
 .why-item:hover .why-icon {
@@ -1328,10 +1329,11 @@ section:nth-child(odd) {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--gold) 0%, var(--light-gold) 100%);
+    background: var(--white);
     border-radius: 50%;
-    color: var(--white);
+    color: var(--black);
     box-shadow: var(--ios-shadow-light);
+    border: 2px solid var(--black);
 }
 
 .award-content h4 {
